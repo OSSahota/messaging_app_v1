@@ -1,4 +1,12 @@
-<form action="/welcome_page" method="post">
-  <input type="text" name="user_name">
-  <input type="submit" value="Submit">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <h2>Please add a message in the following text box: </h2>
+  </head>
+  <body>
+    <form action="/store_messages" method="post">
+      <textarea name="message" id="add_messages" style="margin: 0px; height: 65px; width: 321px;"></textarea>
+      <p> Submit your message: </p> <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

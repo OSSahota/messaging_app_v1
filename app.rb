@@ -6,16 +6,7 @@ class Messaging < Sinatra::Base
   get '/' do
     erb(:index)
   end
-
-  post '/welcome_page' do
-    @user_name = params[:user_name]
-    erb(:welcome_page)
-  end
-
-  get '/add_messages' do
-    erb(:add_messages)
-  end
-
+  
   post '/store_messages' do
     session[:message] = params[:message]
     redirect(:show_messages)

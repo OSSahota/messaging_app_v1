@@ -1,1 +1,12 @@
-<%= @show_messages %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <h2>Your message history: </h2>
+  </head>
+  <body>
+    <%= @show_messages %>
+    <p> Sent at: <%= Time.now.utc %> </p>
+  </body>
+</html>
+
+<!-- <a href="/">Add a new message!</a> -->
