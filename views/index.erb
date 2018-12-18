@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <h2>Please add a message in the following text box: </h2>
+    <h1>Messaging app</h1>
+    <h2>Please enter your message</h2>
   </head>
   <body>
-    <form action="/store_messages" method="post">
+    <form action="/index" method="post">
       <textarea name="message" id="add_messages" style="margin: 0px; height: 65px; width: 321px;"></textarea>
       <p> Submit your message: </p> <input type="submit" value="Submit">
     </form>
+      <h2>Message history</h2>
+
+      <% @list.each do |n| %>
+        <%= n["text"] %> - <%= n["time"] %>
+        <br>
+      <% end %>
+
   </body>
 </html>
