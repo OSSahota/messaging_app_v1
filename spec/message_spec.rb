@@ -12,7 +12,6 @@ describe Message do
 
   subject(:message) { Message.new(msg) }
   let(:msg) { 'First message' }
-  # let(:time) {  }
 
   describe 'return a message' do
     it 'returns a message' do
